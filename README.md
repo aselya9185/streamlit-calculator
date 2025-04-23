@@ -23,34 +23,23 @@ This is a simple calculator project built using **Streamlit** for the frontend a
 You’ll need to run both the FastAPI server and the Streamlit frontend.
 
 1. **Start the FastAPI backend**
-```bash
-uvicorn fast_api:app --reload
-This runs the API at http://127.0.0.1:8000.
+   ```bash
+   uvicorn fast_api:app --reload
 
-2. Start the Streamlit frontend
-In a new terminal window/tab (same directory):
+2. **Start the Streamlit frontend**
+   ```bash
+   streamlit run main.py
 
-bash
-Копировать
-Редактировать
-streamlit run main.py
-The frontend will open in your browser (default: http://localhost:8501).
+## Files Overview
+- calculator.py – Contains the calculate function that performs basic arithmetic operations based on the operation name and input numbers.
+- fast_api.py – Sets up the FastAPI server. It defines the API endpoint and handles POST requests, calling the calculate function using data validated by Pydantic's BaseModel.
+- main.py – The Streamlit frontend script. It allows users to choose operations and inputs interactively and communicates with the FastAPI backend to display the result.
+- requirements.txt – Lists the Python packages needed to run the app (FastAPI, Uvicorn, Streamlit, etc.).
+- README.md – Documentation and setup instructions for your project.
 
-🛠 Files Overview
-main.py – Streamlit UI logic
-
-fast_api.py – FastAPI server logic
-
-requirements.txt – Python dependencies
-
-README.md – This file ✨
-
-📚 Learning Outcome
+## Learning Outcome
 This project helped me understand:
-
-How Streamlit works for rapid frontend development
-
-How FastAPI handles backend APIs
-
-How to make HTTP requests between them
+- How Streamlit works for rapid frontend development
+- How FastAPI handles backend APIs
+- How to make HTTP requests between them
 
