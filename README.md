@@ -11,18 +11,18 @@ This is a simple calculator project built using **Streamlit** for the frontend a
 
 ## Installation
 
-**1. Clone the repo:**
+1. **Clone the repo:**
    ```bash
    git clone [https://github.com/yourusername/streamlit-fastapi-calculator.git](https://github.com/aselya9185/streamlit-calculator.git)
 
-**2. Install dependencies:**
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
 
 ## Run the App
 You’ll need to run both the FastAPI server and the Streamlit frontend.
 
-**1. Start the FastAPI backend**
+1. **Start the FastAPI backend**
 ```bash
 uvicorn fast_api:app --reload
 This runs the API at http://127.0.0.1:8000.
