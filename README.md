@@ -13,7 +13,7 @@ This is a simple calculator project built using **Streamlit** for the frontend a
 
 1. **Clone the repo:**
    ```bash
-   git clone [https://github.com/yourusername/streamlit-fastapi-calculator.git](https://github.com/aselya9185/streamlit-calculator.git)
+   git clone https://github.com/aselya9185/streamlit-calculator.git
 
 2. **Install dependencies:**
    ```bash
